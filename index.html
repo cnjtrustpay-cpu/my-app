@@ -1,1 +1,115 @@
-<h1>My App is Live</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CNJ TrustPay — Governance Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <!-- Login / Auth Band -->
+    <header class="auth-band">
+      <div class="user-meta">
+        <span class="avatar">SY</span>
+        <div>
+          <p class="status-label">Login Status</p>
+          <p class="user-name">Securely logged in as: <strong>Selen Youngblood</strong></p>
+        </div>
+      </div>
+      <button id="authBtn" class="btn-outline">Re-authenticate / Logout</button>
+    </header>
+
+    <main>
+      <h1 class="section-title">My Virtual Card</h1>
+
+      <!-- Virtual Card Display -->
+      <section class="card-wrapper" id="virtualCard">
+        <div class="card-top">
+          <div>
+            CNJENN ENTERTAINMENT LLC</span>
+            TRUST ADMIN VMA4171</span>
+          </div>
+          <span class="visa-badge">VISA <em>INFINITE</em></span>
+        </div>
+
+        <div class="chip"></div>
+        <div class="card-role">GOVERNANCE</div>
+        <div class="card-number" id="cardNumber">4147 •••• •••• 0000</div>
+
+        <div class="card-bottom">
+          <div>
+            <small>MEMBER SINCE</small>
+            <span>06/26</span>
+          </div>
+          <div>
+            <small>EXPIRES THRU</small>
+            <span>12/30</span>
+          </div>
+          <div class="cnj-mark">CNJ</div>
+        </div>
+      </section>
+
+      <!-- Card Actions -->
+      <section class="action-row">
+        <button id="freezeBtn" class="action-btn">Freeze</button>
+        <button id="detailsBtn" class="action-btn">Show Details</button>
+        <button id="historyBtn" class="action-btn">Transaction History</button>
+      </section>
+
+      <!-- Graphical Governance Center -->
+      <section class="panel governance-banner">
+        <div class="badge-icon">CNJ</div>
+        <div>
+          <h2>PRIVATE GOVERNANCE ECOSYSTEM</h2>
+          <p>TRUSTED CUSTODIAL LAYER</p>
+        </div>
+      </section>
+
+      <!-- Spend Overview & Security Controls -->
+      <section class="panel">
+        <h3>Spend Overview & Security</h3>
+        <div class="toggle-row">
+          <span>Security Lock</span>
+          <input type="checkbox" id="secToggle" checked />
+        </div>
+        <div class="toggle-row">
+          <span>Online Payments</span>
+          <input type="checkbox" id="onlineToggle" />
+        </div>
+        <div class="toggle-row">
+          <span>Foreign Transactions</span>
+          <input type="checkbox" id="foreignToggle" />
+        </div>
+      </section>
+
+      <!-- AI Governance Assistant -->
+      <section class="panel ai-panel">
+        <div class="ai-header">
+          <span class="ai-dot"></span>
+          <div>
+            <h3>AI GOVERNANCE ASSISTANT</h3>
+            <p id="aiStatus">Ready to assist</p>
+          </div>
+        </div>
+
+        <div class="quick-prompts">
+          <button class="chip-btn" data-q="rule">Ask Governance Rule</button>
+          <button class="chip-btn" data-q="intent">Review Transaction Intent</button>
+          <button class="chip-btn" data-q="trust">Explain Trust Structure</button>
+        </div>
+
+        <div id="aiOutput" class="ai-output">
+          Select a governance prompt above or ask a question below.
+        </div>
+
+        <form id="aiForm" class="ai-input-row">
+          <input type="text" id="aiInput" placeholder="Ask about governance..." required />
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

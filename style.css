@@ -1,0 +1,42 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+body { background: #070d17; color: #e6eef8; display: flex; justify-content: center; padding: 16px; }
+.app-shell { width: 100%; max-width: 440px; display: flex; flex-direction: column; gap: 14px; }
+.auth-band, .panel { background: #0f1a2b; border: 1px solid #1e3250; border-radius: 14px; padding: 14px; }
+.auth-band { display: flex; flex-direction: column; gap: 10px; }
+.user-meta { display: flex; align-items: center; gap: 10px; }
+.avatar { width: 38px; height: 38px; border-radius: 50%; background: #1e3a5f; display: grid; place-items: center; font-weight: 700; color: #67e8f9; }
+.status-label { font-size: 11px; color: #8ca3c0; text-transform: uppercase; }
+.user-name { font-size: 13px; }
+.btn-outline { background: transparent; border: 1px solid #2d4c75; color: #93c5fd; padding: 7px; border-radius: 8px; cursor: pointer; font-size: 12px; }
+.section-title { font-size: 20px; margin-bottom: 10px; }
+.card-wrapper { background: linear-gradient(135deg, #16181d, #090a0d); border: 1px solid #333944; border-radius: 16px; padding: 18px; display: flex; flex-direction: column; gap: 12px; transition: opacity 0.2s; }
+.card-wrapper.frozen { opacity: 0.45; border-color: #38bdf8; }
+.card-top, .card-bottom { display: flex; justify-content: space-between; align-items: center; }
+.entity { display: block; font-size: 12px; font-weight: 700; letter-spacing: 0.6px; }
+.sub-entity { font-size: 10px; color: #9ca3af; }
+.visa-badge { font-weight: 800; font-size: 15px; letter-spacing: 1px; }
+.visa-badge em { display: block; font-size: 8px; font-style: normal; text-align: right; color: #9ca3af; }
+.chip { width: 36px; height: 26px; background: linear-gradient(135deg, #d1d5db, #9ca3af); border-radius: 5px; }
+.card-role { font-size: 18px; letter-spacing: 3px; font-weight: 600; color: #f3f4f6; }
+.card-number { font-family: monospace; font-size: 17px; letter-spacing: 2px; }
+.card-bottom small { display: block; font-size: 8px; color: #9ca3af; }
+.card-bottom span { font-size: 12px; }
+.cnj-mark { font-size: 20px; font-weight: 700; letter-spacing: 1px; }
+.action-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 10px; }
+.action-btn { background: #13233a; border: 1px solid #243f66; color: #e2e8f0; padding: 10px 6px; border-radius: 10px; font-size: 12px; cursor: pointer; }
+.governance-banner { display: flex; align-items: center; gap: 12px; background: linear-gradient(135deg, #132238, #1b1535); }
+.badge-icon { width: 42px; height: 42px; border-radius: 10px; background: #261e47; border: 1px solid #6366f1; display: grid; place-items: center; font-weight: 700; font-size: 12px; }
+.governance-banner h2 { font-size: 12px; letter-spacing: 0.5px; }
+.governance-banner p { font-size: 11px; color: #94a3b8; }
+.panel h3 { font-size: 14px; margin-bottom: 10px; }
+.toggle-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid #182942; font-size: 13px; }
+.toggle-row:last-child { border-bottom: none; }
+.ai-header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.ai-dot { width: 12px; height: 12px; border-radius: 50%; background: #22d3ee; box-shadow: 0 0 8px #22d3ee; }
+.ai-header p { font-size: 11px; color: #67e8f9; }
+.quick-prompts { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+.chip-btn { background: #162b46; border: 1px solid #284b78; color: #bae6fd; padding: 6px 10px; border-radius: 999px; font-size: 11px; cursor: pointer; }
+.ai-output { background: #09111e; border: 1px solid #1a2d47; border-radius: 10px; padding: 10px; font-size: 12px; line-height: 1.45; color: #cbd5e1; margin-bottom: 10px; }
+.ai-input-row { display: flex; gap: 6px; }
+.ai-input-row input { flex: 1; background: #09111e; border: 1px solid #243f66; border-radius: 8px; padding: 8px 10px; color: #fff; font-size: 12px; }
+.ai-input-row button { background: #0284c7; border: none; color: #fff; padding: 8px 14px; border-radius: 8px; font-size: 12px; font-weight: 600; cursor: pointer; }
